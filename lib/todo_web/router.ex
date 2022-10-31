@@ -14,5 +14,10 @@ defmodule TodoWeb.Router do
     plug :accepts, ["json"]
   end
 
-  use Kaffy.Routes, scope: "/", pipe_through: [:browser]
+  scope "/", TodoWeb do
+    pipe_through :browser
+    live "/", TodoLive
+  end
+
+  use Kaffy.Routes, scope: "/admin", pipe_through: [:browser]
 end

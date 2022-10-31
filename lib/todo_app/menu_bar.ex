@@ -22,6 +22,7 @@ defmodule TodoApp.MenuBar do
         <item onclick="quit"><%= gettext "Quit" %></item>
     </menu>
     <menu label={gettext "Extra"}>
+        <item onclick="admin"><%= gettext "Adminstrate" %></item>
         <item onclick="notification"><%= gettext "Show Notification" %></item>
         <item onclick="observer"><%= gettext "Show Observer" %></item>
         <item onclick="browser"><%= gettext "Open Browser" %></item>
@@ -49,6 +50,12 @@ defmodule TodoApp.MenuBar do
     Window.prepare_url(TodoWeb.Endpoint.url())
     |> :wx_misc.launchDefaultBrowser()
 
+    {:noreply, menu}
+  end
+
+  def handle_event("admin", menu) do
+    Window.prepare_url(TodoWeb.Endpoint.url() <> "/admin")
+    |> :wx_misc.launchDefaultBrowser()
     {:noreply, menu}
   end
 
