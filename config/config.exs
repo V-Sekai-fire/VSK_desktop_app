@@ -17,6 +17,8 @@ config :kaffy,
   otp_app: :todo_app,
   ecto_repo: TodoApp.Repo,
   router: TodoWeb.Router,
+  admin_logo: "/images/icon.svg",
+  admin_logo_mini: "/images/icon.svg",
   hide_dashboard: true,
   home_page: [schema: ["tasks", "todo"]],
   resources: &TodoApp.Kaffy.Config.create_resources/1
