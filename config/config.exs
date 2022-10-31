@@ -1,9 +1,25 @@
 import Config
 
+defmodule TodoApp.Kaffy.Config do
+  def create_resources(_conn) do
+    [
+      tasks: [
+        name: "Todos",
+        resources: [
+          todo: [schema: TodoApp.Todo],
+        ]
+      ]
+    ]
+  end
+end
+
 config :kaffy,
   otp_app: :todo_app,
   ecto_repo: TodoApp.Repo,
-  router: TodoWeb.Router
+  router: TodoWeb.Router,
+  hide_dashboard: true,
+  home_page: [schema: ["tasks", "todo"]],
+  resources: &TodoApp.Kaffy.Config.create_resources/1
 
 config :esbuild,
   version: "0.12.18",
