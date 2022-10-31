@@ -9,6 +9,7 @@ This application is an Elixir LiveView based desktop application. It uses the el
 - [x] Create a sqlite database
 - [x] Show a CRUD view of the database
 - [x] Integrate kaffy admin panel
+- [ ] Compile gltfpack as a Unifex Elixir extension
 - [ ] Take a glb and apply gltfpack
     - [ ] glb as a membrane source element
     - [ ] gltfpack as a membrane filter element to optimize gltf
