@@ -8,6 +8,7 @@ This application is an Elixir LiveView based desktop application. It uses the el
 - [x] Add a webview
 - [x] Create a sqlite database
 - [x] Show a CRUD view of the database
+- [x] Integrate kaffy admin panel
 - [ ] Take a glb and apply gltfpack
     - [ ] glb as a membrane source element
     - [ ] gltfpack as a membrane filter element to optimize gltf
