@@ -5,6 +5,9 @@ This application is an Elixir LiveView based desktop application. It uses the el
 ## Roadmap
 
 - [ ] Take a glb and apply gltfpack
+    - [ ] glb as a membrane source element
+    - [ ] gltfpack as a membrane filter element
+    - [ ] glb as a membrane sink element
 - [ ] Take a glb and get vital stats.
 
 ## Changes in 1.0
