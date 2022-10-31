@@ -8,6 +8,7 @@ defmodule TodoApp.Todo do
   import Ecto.Changeset
   import Ecto.Query, only: [order_by: 2]
 
+  @primary_key {:id, :binary_id, autogenerate: true}
   schema "todos" do
     field(:text, :string)
     field(:status, :string)

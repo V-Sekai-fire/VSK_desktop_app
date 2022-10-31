@@ -35,7 +35,6 @@ defmodule TodoWeb.TodoLive do
   end
 
   def handle_event("toggle", %{"id" => id}, socket) do
-    id = String.to_integer(id)
     TodoApp.Todo.toggle_todo(id)
     {:noreply, socket}
   end
