@@ -21,8 +21,14 @@ defmodule TodoApp.MenuBar do
         <hr/>
         <item onclick="quit"><%= gettext "Quit" %></item>
     </menu>
-    <menu label={gettext "Extra"}>
+    <menu label={gettext "Edit"}>
+        <item onclick="game"><%= gettext "Game" %></item>
+        <item onclick="todo"><%= gettext "Todo" %></item>
+    </menu>
+    <menu label={gettext "Admin"}>
         <item onclick="admin"><%= gettext "Adminstrate" %></item>
+    </menu>
+    <menu label={gettext "Extra"}>
         <item onclick="notification"><%= gettext "Show Notification" %></item>
         <item onclick="observer"><%= gettext "Show Observer" %></item>
         <item onclick="browser"><%= gettext "Open Browser" %></item>
@@ -53,9 +59,18 @@ defmodule TodoApp.MenuBar do
     {:noreply, menu}
   end
 
+  def handle_event("todo", menu) do
+    Window.show(TodoWindow, Window.prepare_url(TodoWeb.Endpoint.url() <> "/"))
+    {:noreply, menu}
+  end
+
+  def handle_event("game", menu) do
+    Window.show(TodoWindow, Window.prepare_url("https://v-sekai.org"))
+    {:noreply, menu}
+  end
+
   def handle_event("admin", menu) do
-    Window.prepare_url(TodoWeb.Endpoint.url() <> "/admin")
-    |> :wx_misc.launchDefaultBrowser()
+    Window.show(TodoWindow, Window.prepare_url(TodoWeb.Endpoint.url() <> "/admin"))
     {:noreply, menu}
   end
 
