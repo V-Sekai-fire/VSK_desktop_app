@@ -28,7 +28,6 @@ defmodule TodoApp.MenuBar do
     <menu label={gettext "Extra"}>
         <item onclick="notification"><%= gettext "Show Notification" %></item>
         <item onclick="observer"><%= gettext "Show Observer" %></item>
-        <item onclick="browser"><%= gettext "Open Browser" %></item>
     </menu>
     </menubar>
     """
@@ -46,13 +45,6 @@ defmodule TodoApp.MenuBar do
 
   def handle_event("quit", menu) do
     Window.quit()
-    {:noreply, menu}
-  end
-
-  def handle_event("browser", menu) do
-    Window.prepare_url(TodoWeb.Endpoint.url())
-    |> :wx_misc.launchDefaultBrowser()
-
     {:noreply, menu}
   end
 
