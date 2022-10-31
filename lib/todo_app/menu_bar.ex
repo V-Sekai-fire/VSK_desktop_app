@@ -12,6 +12,7 @@ defmodule TodoApp.MenuBar do
     ~H"""
     <menubar>
     <menu label={gettext "File"}>
+        <item onclick="todo"><%= gettext "Todo" %></item>
         <%= for item <- @todos do %>
         <item
             type="checkbox" onclick={"toggle:#{item.id}"}
@@ -23,7 +24,6 @@ defmodule TodoApp.MenuBar do
     </menu>
     <menu label={gettext "Edit"}>
         <item onclick="game"><%= gettext "Game" %></item>
-        <item onclick="todo"><%= gettext "Todo" %></item>
     </menu>
     <menu label={gettext "Admin"}>
         <item onclick="admin"><%= gettext "Adminstrate" %></item>
