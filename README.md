@@ -6,9 +6,9 @@ This application is an Elixir LiveView based desktop application. It uses the el
 
 - [ ] Take a glb and apply gltfpack
     - [ ] glb as a membrane source element
-    - [ ] gltfpack as a membrane filter element
+    - [ ] gltfpack as a membrane filter element to optimize gltf
+    - [ ] gltfpack as a membrane filter element as a way to get json statistics
     - [ ] glb as a membrane sink element
-- [ ] Take a glb and get vital stats.
 
 ## Changes in 1.0
 
