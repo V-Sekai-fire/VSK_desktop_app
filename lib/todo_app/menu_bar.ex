@@ -30,9 +30,6 @@ defmodule TodoApp.MenuBar do
         <item onclick="observer"><%= gettext "Show Observer" %></item>
         <item onclick="browser"><%= gettext "Open Browser" %></item>
     </menu>
-    <menu label={gettext "Help"}>
-        <item onclick="help"><%= gettext "About V-Sekai" %></item>
-    </menu>
     </menubar>
     """
   end
@@ -61,11 +58,6 @@ defmodule TodoApp.MenuBar do
 
   def handle_event("todo", menu) do
     Window.show(TodoWindow, Window.prepare_url(TodoWeb.Endpoint.url() <> "/"))
-    {:noreply, menu}
-  end
-
-  def handle_event("help", menu) do
-    Window.show(TodoWindow, Window.prepare_url("https://v-sekai.org"))
     {:noreply, menu}
   end
 

@@ -13,6 +13,12 @@ This application is an Elixir LiveView based desktop application. It uses the el
 To run this app you need at least Erlang 24 and recent builds of wxWidgets and at least
 Elixir 1.11.4.
 
+## Todo list
+
+- [ ] Take a fbx and convert to a glb
+- [ ] Take a glb and apply gltfpack
+- [ ] Take a glb and get vital stats.
+
 ## Dependencies
 
 This example assumes you've got installed:
