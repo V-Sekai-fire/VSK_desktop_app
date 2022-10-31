@@ -2,6 +2,12 @@
 
 This application is an Elixir LiveView based desktop application. It uses the elixir-desktop library and a local SQLite database to create a web-technology based desktop app.
 
+## Roadmap
+
+- [ ] Take a fbx and convert to a glb
+- [ ] Take a glb and apply gltfpack
+- [ ] Take a glb and get vital stats.
+
 ## Changes in 1.0
 
 - Updated to Phoenix 1.6 with esbuild+dart_scss
@@ -12,12 +18,6 @@ This application is an Elixir LiveView based desktop application. It uses the el
 
 To run this app you need at least Erlang 24 and recent builds of wxWidgets and at least
 Elixir 1.11.4.
-
-## Todo list
-
-- [ ] Take a fbx and convert to a glb
-- [ ] Take a glb and apply gltfpack
-- [ ] Take a glb and get vital stats.
 
 ## Dependencies
 
