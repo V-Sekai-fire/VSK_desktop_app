@@ -38,7 +38,7 @@ defmodule TodoApp do
         [
           app: @app,
           id: TodoWindow,
-          title: "TodoApp",
+          title: "3D format automation tasks",
           size: {600, 500},
           icon: "icon.png",
           menubar: TodoApp.MenuBar,
