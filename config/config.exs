@@ -1,5 +1,10 @@
 import Config
 
+config :kaffy,
+  otp_app: :todo_app,
+  ecto_repo: TodoApp.Repo,
+  router: TodoWeb.Router
+
 config :esbuild,
   version: "0.12.18",
   default: [

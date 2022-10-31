@@ -1,6 +1,6 @@
-# TodoApp: A Desktop Sample App
+# AutomationApp: A Desktop Automation App
 
-This application is an example of an Elixir LiveView based desktop application. It uses the elixir-desktop library and a local SQLite database to create a web-technology based desktop app.
+This application is an Elixir LiveView based desktop application. It uses the elixir-desktop library and a local SQLite database to create a web-technology based desktop app.
 
 ## Changes in 1.0
 
