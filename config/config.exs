@@ -21,7 +21,10 @@ config :kaffy,
   admin_logo_mini: "/images/icon.svg",
   hide_dashboard: true,
   home_page: [schema: ["tasks", "todo"]],
-  resources: &TodoApp.Kaffy.Config.create_resources/1
+  resources: &TodoApp.Kaffy.Config.create_resources/1,
+  extensions: [
+    TodoWeb.Kaffy.Extension
+  ]
 
 config :esbuild,
   version: "0.12.18",
