@@ -4,7 +4,6 @@ This application is an Elixir LiveView based desktop application. It uses the el
 
 ## Roadmap
 
-- [ ] Take a fbx and convert to a glb
 - [ ] Take a glb and apply gltfpack
 - [ ] Take a glb and get vital stats.
 
