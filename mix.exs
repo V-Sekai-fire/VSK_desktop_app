@@ -63,6 +63,7 @@ defmodule Todo.MixProject do
 
       # Phoenix
       {:phoenix, "~> 1.6"},
+      {:phoenix_ecto, "~> 4.0"},
       {:phoenix_live_view, "~> 0.16"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.3", only: [:dev]},
