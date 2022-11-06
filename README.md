@@ -31,8 +31,8 @@ mix assets.deploy
 
 Tell me how much detail you want?
 
-1. Elementary
+1. elementary
 1. highschool
 1. college
 1. doctoral
-1. fellow code contributors. 
+1. contributors in the field
