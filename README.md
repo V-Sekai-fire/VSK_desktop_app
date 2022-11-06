@@ -34,5 +34,5 @@ Tell me how much detail you want?
 1. Elementary
 1. highschool
 1. college
-1. doctor
+1. doctoral
 1. fellow code contributors. 
