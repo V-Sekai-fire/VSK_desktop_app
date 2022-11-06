@@ -26,3 +26,13 @@ npm install
 cd ..
 mix assets.deploy
 ```
+
+## Levels of detail
+
+Tell me how much detail you want?
+
+1. Elementary
+1. highschool
+1. college
+1. doctor
+1. fellow code contributors. 
